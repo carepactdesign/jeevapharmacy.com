@@ -13,6 +13,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon32x32.png">
     <!-- Css Styles -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
@@ -34,6 +35,24 @@
       gtag('config', 'UA-141673152-1');
     </script>
 
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1157589587926314');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1157589587926314&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+
 </head>
 
 <body>
@@ -43,17 +62,40 @@
     </div>
 
 
-    <!-- Breadcrumb Section Begin -->
+
+   <section class="mainsec">
    
-    <!-- Breadcrumb Section Begin -->
+            <div class="container">
+                 <div class="content">  
+        <div class="row">
+            <div class="col-md-5">
 
-   <section class="mainsec col-md-6 offset-md-3 col-12">
-      <img src="assets/img/poster.jpeg">
+                <div class="posterbox">
+                     <img class="img-fluid" src="assets/img/poster.jpeg">
+                </div>
+                 
+            </div>
+            <div class="col-md-7">
+
+                <div class="mapbox">
+                     <iframe src="https://www.google.com/maps/d/embed?mid=1a3qX8ZbZweGgoyZWBJVAAmOGlBKlBkEm" width="100%" height="100%"></iframe>
+                </div>
+                
+            </div>
+            
+        </div>
+        </div>
+    </div>
+  
+
+    
+   
    </section>
+   
+ 
 
 
-
-
+  
     <!-- Js Plugins -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -67,46 +109,9 @@
     <script src="assets/js/main.js"></script>
 
 
-    <script type="text/javascript">
-    + function($) {
-    'use strict';
+ 
 
-    // UPLOAD CLASS DEFINITION
-    // ======================
 
-    var dropZone = document.getElementById('drop-zone');
-    var uploadForm = document.getElementById('js-upload-form');
-
-    var startUpload = function(files) {
-        console.log(files)
-    }
-
-    uploadForm.addEventListener('submit', function(e) {
-        var uploadFiles = document.getElementById('js-upload-files').files;
-        e.preventDefault()
-
-        startUpload(uploadFiles)
-    })
-
-    dropZone.ondrop = function(e) {
-        e.preventDefault();
-        this.className = 'upload-drop-zone';
-
-        startUpload(e.dataTransfer.files)
-    }
-
-    dropZone.ondragover = function() {
-        this.className = 'upload-drop-zone drop';
-        return false;
-    }
-
-    dropZone.ondragleave = function() {
-        this.className = 'upload-drop-zone';
-        return false;
-    }
-
-}(jQuery);
-</script>
 </body>
 
 </html>
